@@ -1,224 +1,149 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>E-969 Simulator</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html>
+  <head>
+        <style type="text/css">
 
-  <style>
-    /* Page base */
-    html, body {
-      margin: 0;
-      background: #0f1a24; /* optional brand */
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    }
-
-    /* A fluid wrapper around the original 1000px canvas */
-    .sim-wrapper {
-      /* Let the simulator scale down when embedded in a narrow column */
-      width: min(100%, 1000px);
-      margin: 0 auto;
-    }
-
-    /* Header area: replacing <table background="..."> with a div */
-    .header {
-      width: 100%;
-      aspect-ratio: 1000 / 158; /* keeps the same proportions */
-      background: url("Images/E-969_upper_blank.jpg") center no-repeat;
-      background-size: contain; /* scale the background image */
-      border: 1px solid #23384e;
-      position: relative;
-    }
-
-    /* Button bar content over the header image */
-    .header-inner {
-      position: absolute;
-      inset: 0; /* fill the header */
-      display: grid;
-      grid-template-columns: 60px 10px 20px 85px 32px 1fr 32px 85px 20px 85px auto;
-      align-items: center;
-      padding: 10px 0;
-    }
-
-    /* Text row area (centered) */
-    .display-text {
-      text-align: center;
-      padding-top: 10px;
-    }
-
-    /* Make all inline images scale with container width */
-    img.responsive {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    /* Lower panel image (keypad/touch areas) */
-    .lower {
-      margin: 12px auto;
-      /* center below header, capped to wrapper width */
-      width: 100%;
-      text-align: center;
-    }
-
-    /* Optional: fine-tune borders to match your original table look */
-    .border-1 {
-      border: 1px solid #23384e;
-    }
-
-    /* Rise and mobile friendliness: keep things usable at narrow widths */
-    @media (max-width: 900px) {
-      .header-inner {
-        grid-template-columns: 40px 10px 20px 70px 20px 1fr 20px 70px 10px 70px auto;
-      }
-    }
-  </style>
-</head>
+        </style>
+  </head>
 <body>
 
-  <div class="sim-wrapper">
-    <!-- Header image area -->
-    <div class="header border-1">
-      <div class="header-inner">
-        <!-- Empty spacer cells match your original pixel grid -->
-        <div></div>
 
-        <!-- ON/OFF (blank image, no link in original) -->
-        <div>
-          <img src="Images/blank button.png" alt="" class <div></div>
+<table background="Images/E-969_upper_blank.jpg" width="1000" height="158" align=center border=1 cellpadding="0" cellspacing="0" style="background-repeat: no-repeat;">
+    <tr height=71 bordercolor="white">
+        <td colspan=100></td>
+    </tr>
+        
+    <tr height=65>
+        <td width=60>
+        </td>
+        
+        <!--ON/OFF-->
+        <td width=10>
+            <img src="Images/blank button.png">
+            </a>
+        </td>
+        
+        <td width=20>
+        </td>
 
-        <!-- RESET -->
-        <div>
-          <a href="index.html">
- Images/blank button.png
-          </a>
-        </div>
+        <!--RESET-->
+        <td width=85>
+            <a href="index.html">
+            <img src="Images/blank button.png">
+            </a>
+        </td>
+        
+        <td width=32>
+        </td>
+        
+        <!--Text-->
+        <td width=425 valign="top" style="padding-top:10px">
+            <center>
+        <!--ROW 1-->
+            <!--1--><img src="Images/Text images/Font/SPACE.png">
+            <!--2--><img src="Images/Text images/Font/E.png">
+            <!--3--><img src="Images/Text images/Font/-.png">
+            <!--4--><img src="Images/Text images/Font/9.png">
+            <!--5--><img src="Images/Text images/Font/6.png">
+            <!--6--><img src="Images/Text images/Font/9.png">
+            <!--7--><img src="Images/Text images/Font/SPACE.png">
+            <!--8--><img src="Images/Text images/Font/-.png">
+            <!--9--><img src="Images/Text images/Font/-.png">
+            <!--11--><img src="Images/Text images/Font/SPACE.png">
+            <!--12--><img src="Images/Text images/Font/S.png">
+            <!--13--><img src="Images/Text images/Font/T.png">
+            <!--14--><img src="Images/Text images/Font/A.png">
+            <!--15--><img src="Images/Text images/Font/N.png">
+            <!--16--><img src="Images/Text images/Font/D.png">
+            <!--17--><img src="Images/Text images/Font/SPACE.png">
+            <!--18--><img src="Images/Text images/Font/B.png">
+            <!--19--><img src="Images/Text images/Font/Y.png">
+            <!--20--><img src="Images/Text images/Font/SPACE.png">
+            <!--21--><img src="Images/Text images/Font/M.png">
+            <!--22--><img src="Images/Text images/Font/O.png">
+            <!--23--><img src="Images/Text images/Font/D.png">
+            <!--24--><img src="Images/Text images/Font/E.png">
+        
+        <br>
 
-        <div></div>
+        <!--ROW 2-->
+            <!--1--><img src="Images/Text images/Font/M.png">
+            <!--2--><img src="Images/Text images/Font/O.png">
+            <!--3--><img src="Images/Text images/Font/N.png">
+            <!--4--><img src="Images/Text images/Font/D.png">
+            <!--5--><img src="Images/Text images/Font/A.png">
+            <!--6--><img src="Images/Text images/Font/Y.png">
+            <!--7--><img src="Images/Text images/Font/SPACE.png">
+            <!--8--><img src="Images/Text images/Font/SPACE.png">
+            <!--9--><img src="Images/Text images/Font/SPACE.png">
+            <!--11--><img src="Images/Text images/Font/SPACE.png">
+            <!--12--><img src="Images/Text images/Font/SPACE.png">
+            <!--13--><img src="Images/Text images/Font/SPACE.png">
+            <!--14--><img src="Images/Text images/Font/SPACE.png">
+            <!--15--><img src="Images/Text images/Font/1.png">
+            <!--16--><img src="Images/Text images/Font/1.png">
+            <!--17--><img src="Images/Text images/Font/semicolon.png">
+            <!--18--><img src="Images/Text images/Font/3.png">
+            <!--19--><img src="Images/Text images/Font/9.png">
+            <!--20--><img src="Images/Text images/Font/semicolon.png">
+            <!--21--><img src="Images/Text images/Font/1.png">
+            <!--22--><img src="Images/Text images/Font/8.png">
+            <!--23--><img src="Images/Text images/Font/SPACE.png">
+            <!--24--><img src="Images/Text images/Font/SPACE.png">
+            </center>
+        </td>
+        
+        <td width=32>
+        </td>
+        
+        <td width=85>
+        </td>
+        
+        <td width=20>
+        </td>
+        
+        <!--SEND-->
+        <td width=85>
+            <a href="index.html">
+            <img src="Images/blank button.png">
+            </a>
+        </td>
+        
+        <td>
+        </td>
+    </tr>
 
-        <!-- Text rows (composed of glyph images) -->
-        <div class="display-text">
-          <!-- ROW 1 -->
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          <br />
-          <!-- ROW 2 -->
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-        </div>
+    <tr>
+        <td colspan="100">
+        </td>
+    </tr>
+</table>
 
-        <div></div>
-        <div></div>
-        <div></div>
+<center>
+    <img src="Images/E-969_lower.jpg" usemap="#map">
+</center>
 
-        <!-- SEND -->
-        <div>
-          index.html
-            Images/blank button.png
-          </a>
-        </div>
+      <map name="map">
+          <!--C2--> <area shape="rect" coords="819,95,928,231" href="Additional web pages/C2 stand by.html">
+          <!--C4--> <area shape="rect" coords="817,253,926,388" href="Additional web pages/C4 stand by.html">
+          <!--WARNING TONE--> <area shape="rect" coords="70,77,155,145" href="">
+          <!--SCROLL UP--> <area shape="rect" coords="75,311,148,360" href="">
+          <!--SCROLL DOWN--> <area shape="rect" coords="175,310,246,362" href="">
+          <!--1--> <area shape="rect" coords="349,77,415,144" href="">
+          <!--2--> <area shape="rect" coords="436,77,503,144" href="">
+          <!--3--> <area shape="rect" coords="523,77,592,144" href="">
+          <!--4--> <area shape="rect" coords="348,168,415,229" href="">
+          <!--5--> <area shape="rect" coords="434,168,503,229" href="">
+          <!--6--> <area shape="rect" coords="521,168,587,229" href="">
+          <!--7--> <area shape="rect" coords="348,248,414,314" href="">
+          <!--8--> <area shape="rect" coords="436,248,500,314" href="">
+          <!--9--> <area shape="rect" coords="523,248,589,314" href="">
+          <!--0--> <area shape="rect" coords="434,335,501,400" href="Additional web pages/addr 0.html">
+          <!--#--> <area shape="rect" coords="348,333,413,398" href="">
+      </map>
 
-        <div></div>
-      </div>
-    </div>
 
-    <!-- Lower control panel with imagemap -->
-    <div class="lower">
-      <!-- Important: give the image a fixed intrinsic (natural) size via CSS
-           The helper script will scale coords from the image’s natural size. -->
-      <img src="Images/E-969_lower.jpg"
-           alt="E-969 Control Panel"
-           usemap="#map"
-           class="responsive border-1" />
-    </div>
-  </div>
 
-  <map name="mappe="rect" coords="819,95,928,231" href="Additional web pages/C2 stand by.html" alt="C2 Stand By WARNING TONE -->
-    <area shape="rect" coords="70,77,155,145" href="" alt="Warning Tone">
-    <!-- SCROLL UP -->
-    <area shape="rect" coords="75,311,148,360" href="" alt="Scroll Up">
-    <!-- SCROLL DOWN -->
-    <area shape="rect" coords="175,310,246,362" href="" alt="Scroll Down">
-    <!-- 1 -->
-    <area shape="rect" coords="349,77,415,144" href="" alt="1">
-    <!-- 2 -->
-    <area shape="rect" coords="436,77,503,144" href="" alt="2">
-    <!-- 3 -->
-    <area shape="rect" coords="523,77,592,144" href="" alt="3">
-    <!-- 4 -->
-    <area shape="rect" coords="348,168,415,229" href="" alt="4">
-    <!-- 5 -->
-    <area shape="rect" coords="434,168,503,229" href="" alt="5">
-    <!-- 6 -->
-    <area shape="rect" coords="521,168,587,229" href="" alt="6">
-    <!-- 7 -->
-    <area shape="rect" coords="348,248,414,314" href="" alt="7">
-    <!-- 8 -->
-    <area shape="rect" coords="436,248,500,314" href="" alt="8">
-    <!-- 9 -->
-    <area shape="rect" coords="523,248,589,314" href="" alt="9">
-    <!-- 0 -->
-    <area shape="rectges/addr 0.html
-    <!-- # -->
-    <area shape="rect" coords="348,333,413,398" href="" alt="#">
-  </map>
 
-  <!-- Responsive image-map helper (CDN) -->
-  <!-- This library scales <area coords> to match the image’s current size. -->
-  <!-- Docs: https://github.com/davidjbradshaw/image-map-resizer -->
-  <script src="sdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js</script>
-  <script>
-    // Initialize after the image has rendered
-    window.addEventListener('load', function () {
-      imageMapResize(); // will auto-bind to all <map> tags on the page
-    });
-  </script>
-</body>
+
+  </body>
 </html>
